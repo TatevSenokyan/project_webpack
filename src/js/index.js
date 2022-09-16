@@ -28,5 +28,11 @@ var swiper = new Swiper(".swiper-container-1", {
   });
 
 
-// navbar();
+navbar(window.innerWidth);
+window.addEventListener('resize', ()=>{
+  navbar(window.innerWidth);
+});
 renderItems(data.archived);
+
+
+

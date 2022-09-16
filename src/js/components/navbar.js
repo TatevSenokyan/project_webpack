@@ -1,7 +1,45 @@
 
-function navbar() {
+function navbar(screen) {
     const navContainer = document.querySelector('.navbar');
-    //create image part
+    navContainer.innerHTML='';
+
+    if (screen<1280) {
+
+        navContainer.innerHTML = `
+        <div class='navbarWrapper'>
+            <div class='menu-icon'></div>
+            <div class='menu-logo'></div>
+            <div class='signinText'>SIGN IN</div>
+        </div>
+        <div class='navbarContent'>
+            <div>NEW</div>
+            <div>OUR PRODUCTS</div>
+            <div>BRANDS</div>
+        </div>
+        <div class='menu-icons-mobile'>
+            <div class='imgBasket'></div>
+            <div class='imgSearch'></div>
+            <div class='imgLangMobile'></div>
+        </div>
+        `;
+        const menu = document.querySelector('.menu-icon');
+        const nav = document.querySelector('.navbar');
+        const logo = document.querySelector('.menu-logo');
+        const text = document.querySelector('.signinText');
+        const navContent = document.querySelector('.navbarContent');
+        const icons = document.querySelector('.menu-icons-mobile');
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('menuOpen');
+            nav.classList.toggle('menuOpen');
+            logo.classList.toggle('menuOpen');
+            text.classList.toggle('menuOpen');
+            navContent.classList.toggle('menuOpen');
+            icons.classList.toggle('menuOpen');
+        });
+
+    } else {
+         //create image part
     const imgDiv = document.createElement('div');
     imgDiv.className = 'logoImg';
     // create ul
@@ -39,6 +77,8 @@ function navbar() {
     navContainer.appendChild(imgDiv);
     navContainer.appendChild(ul);
     navContainer.appendChild(div);
+    }
+ 
 
     return navContainer;
 }
