@@ -28,5 +28,5 @@ var swiper = new Swiper(".swiper-container-1", {
   });
 
 
-navbar();
+// navbar();
 renderItems(data.archived);
