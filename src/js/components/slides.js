@@ -2,11 +2,22 @@
 
 
 
-function createSlide (data) {
+function createSlide (data, screen) {
+    
     const container = document.querySelector('.second');
-    data.forEach(item => {
+    data.forEach((item, index) => {
         const div = document.createElement('div');
-        div.className = "swiper-slide product";
+        if (index) {
+            div.className = "swiper-slide product adjust";
+        } else {
+            if (screen<700) {
+                console.log('mj')
+                div.className = "swiper-slide product adjustMinMob";
+            } else {
+                div.className = "swiper-slide product adjustMin";
+            }
+            
+        }
         const img = document.createElement('div');
         img.className = 'slideImg';
         const productTitle=document.createElement('p');

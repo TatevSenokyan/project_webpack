@@ -34,7 +34,6 @@ body {
     z-index: 500000;
     display: flex;
     flex-direction: column;
-    transition: all 1s linear;
 }
 .navbarContent {
      display: none;
@@ -149,7 +148,7 @@ ul {
     display: flex;
     width: 600px;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 ul li {
   list-style-type: none;
@@ -372,14 +371,26 @@ ul li::after {
 
  .swiper-container-2 {
     width: 100%;
-    height: 673px;
+    height: 570px;
     position: relative;
 }
 
 .product {
-    height: 530px
+    height: 530px;
+    min-width: 148px;
+    max-width: 148px;
 }
 
+.adjust {
+    margin-left: 120px;
+}
+.adjustMinMob {
+    margin-left: 10px;
+}
+
+.adjustMin {
+    margin-left: -60px;
+}
 .swiper-wrapper {
     display: flex;
     align-items: center;
@@ -399,17 +410,19 @@ ul li::after {
     font-weight: 700;
     font-size: 30px;
     line-height: 48px;
-    margin-left: 50px
+    margin-left: 50px;
+    text-align: center;
 }
 
 .swiper-button-next, .swiper-button-prev {
     width: 50px;
     height: 50px;
     color: #B3B3B3;
+    display: none;
 }
 
 .slideImg {
-    width: 250px;
+    width: 273px;
     height: 350px;
     background-image: url(../images/product.png);
     background-size: cover;
@@ -423,14 +436,14 @@ ul li::after {
 
 .productTitle {
     color: #4B4B4B;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 10px;
     margin-left: 25px;
 }
 
 .productPrice {
     color: #4B4B4B;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 10px;
 }
 
@@ -450,16 +463,17 @@ ul li::after {
 }
 
 .about {
-  width: 91%;
+  width: 92%;
   margin: auto;
 }
 
 .aboutImg {
-    width: 50%;
-    height: 600px;
+    width: 361px;
+    min-height: 248px;
     background-image: url(../images/whoWeAre.png);
-    background-size: contain;
-    background-repeat: no-repeat
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: auto
 }
 
 .aboutTitle {
@@ -470,14 +484,12 @@ ul li::after {
 }
 .aboutWrapper {
     width: 100%;
-    display: flex;
-    align-items: center;
 }
 .aboutContent {
-    width: 50%;
-    font-size: 28px;
-    padding-left: 50px;
+    width: 84%;
+    font-size: 14px;
     color: #727272;
+    margin: auto;
 }
 
 a {
@@ -485,56 +497,229 @@ a {
 }
 
 .archived {
-    width: 88%;
-    margin: auto;
-    height: 379px;
-    background: red;
+    width: 84.6%;
+    margin: 25px auto;
+    height: 360px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
-    align-items: end;
+}
+
+.archived-title {
+    width: 84.6%;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 48px;
+    color: #000000;
+    margin: 25px auto 0px auto;
+    text-align: center;
 }
 
 .item {
-    width: 329px;
-    height: 279px;
-    background: gray;
+    width: 44.5%;
+    height: 168px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #B2B2B2;
+}
+
+.vapester {
+    margin: 25px auto 20px auto;
+    width: 58px;
+    height: 53px;
+    background-image: url('../images/vapester.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cigarette {
+    margin: 25px auto 20px auto;
+    width: 46px;
+    height: 46px;
+    background-image: url('../images/cigarette.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flavor {
+    margin: 25px auto 20px auto;
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/flavor.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.combo {
+    margin: 25px auto 20px auto;
+    width: 50px;
+    height: 46px;
+    background-image: url('../images/combo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    width: 100%;
+    height: 300px
 }
 
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1200px) {
+    .productTitle, .productPrice {
+        font-size: 24px;
+    }
+    
+    .about {
+        width: 84.6%;   
+    }
+
+    .product {
+        height: 530px;
+        min-width: unset;
+        max-width: unset;
+    }
+    
+    .adjust {
+        margin-left: 0px;
+    }
+    .adjustMinMob {
+        margin-left: 0px;
+    }
+    
+    .adjustMin {
+        margin-left: 0px;
+    }
+
+    .slideImg {
+        width: 250px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        display: block;
+    }
+
+    .aboutImg {
+        width: 50%;
+        height: 400px
+    } 
+    .aboutContent {
+        width: 50%;
+        font-size: 24px;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+    .item {
+        width: 20%;
+        height: 200px;
+    }
+    .archived {
+        flex-wrap: nowrap;
+        height: 200px;
+        justify-content: space-between;
+    }
+    .archived-title {
+        text-align: left;
+        font-size: 30px;
+    }
+    .vapester, .combo, .flavor, .cigarette {
+        margin-top: 40px
+    }
+    .itemCount {
+        padding-top: 5px
+    }
+    .scroll {
+        background-image: url('../images/scroll.png');
+        width: 20px;
+        background-size: cover;
+        height: 55px;
+    }
+
+    @keyframes scroll {
+        from {
+             margin-top: -150px;
+        }
+       
+        to {
+            margin-top: -100px;
+        }
+    }
+    
     .navbar {
         flex-direction: row;
+        margin: 45px 8%;
+        height: 111px;
     }
     .warning {
        height: 40px;
+       align-items: center;
+    }
+
+    .signinSearchLangWrapper {
+        height: 111px;
+        width: 310px
+    }
+
+    .signinText {
+        margin-left: 20px;
+    }
+    .warning span {
+        width: 100%;
+        height: 20px;    
+    }
+
+    .swiper-slide .title {
+        font-size: 30px;
+        font-weight: normal;
+        margin-top: 60vh;
+        text-align: left;
+        margin-left: 45px;
+    }
+    
+    .swiper-slide .subtitle {
+        font-size: 50px;
+        font-weight: 700;
+        text-align: left;
+        width: auto;
+        margin: auto 45px;
     }
 
     .secondSlideContent {
         width: 557px;
         margin-top: 40vh;
-        padding-left: 50px;
+        margin: 256px 45px;
+        /* padding-left: 50px; */
     }
 
     .secondSlideContent div:nth-child(1) {
         width: 485px;
         line-height: 40px;
         font-size: 40px;
+        text-align: center;
     }
 
     
     .secondSlideContent div:nth-child(2) {
-        width: 100%;
+        width: 89%;
         font-size: 22px;
         font-weight: 200;
         line-height: 24px;
         opacity: 0.9;
+        padding-top: 10px;
         text-align: center;
     }
 
     .secondSlideContent div:nth-child(3) button{
-    width: 202px;
+        width: 202px;
     }
     .secondSlideContent div:nth-child(3) input{
         width: 304px;
+    }
+
+    .aboutWrapper {
+        display: flex;
     }
 }

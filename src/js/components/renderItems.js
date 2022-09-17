@@ -7,8 +7,17 @@ function render (data) {
       const div = document.createElement('div');
       div.className = 'item';
       const img = document.createElement('div');
-      img.style.backgroundImage = `url(../../images/vapester.png)`
+      img.className = item.img;
+      const title = document.createElement('div');
+      title.innerHTML = item.title;
+      title.className = 'itemTitle';
+      const count = document.createElement('div');
+      count.innerHTML = item.count;
+      count.className = 'itemCount'
+
       div.append(img);
+      div.append(title);
+      div.append(count);
       archivedContainer.append(div);
    });
 
