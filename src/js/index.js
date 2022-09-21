@@ -1,12 +1,15 @@
 import '../css/index.css';
 import navbar from './components/navbar';
+import footer from './components/footer';
 import {data} from './components/assets/constant';
 import createSlide from './components/slides';
 import renderItems from './components/renderItems';
 
 navbar(window.innerWidth);
+footer(window.innerWidth);
 window.addEventListener('resize', ()=>{
   navbar(window.innerWidth);
+  footer(window.innerWidth);
   // createSlide(data.products, window.innerWidth);
 });
 renderItems(data.archived);
@@ -32,6 +35,10 @@ var swiper = new Swiper(".swiper-container-1", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+
+
 
 
 
