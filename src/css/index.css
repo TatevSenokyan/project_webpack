@@ -71,6 +71,7 @@ body {
     height: 100vh;
     background-color:  #E5E5E5;
     margin: 0;
+    position: unset;
     align-items: flex-start;
     /* padding: 30px; */
     transition: height 1s linear;
@@ -83,6 +84,12 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer
+}
+
+.product-menu-icon {
+    background-image: url('../images/black_menu.png');
+    width: 60px;
+    height: 60px;
 }
 
 .menu-icon.menuOpen {
@@ -128,6 +135,15 @@ body {
     margin-left: 5px;
 }
 
+.product-menu-logo {
+    width: 154px;
+    height: 64px;
+    background-image: url('../images/black_logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+
 .menu-logo.menuOpen {
     background-image: url('../images/black_logo.png');
 }
@@ -158,11 +174,23 @@ ul li {
   margin-left: 20px;
   font-size: 20px;
 }
+.black-list li {
+    color: #000000;
+}
+
+.black-list a:nth-of-type(2) li{
+    color: #5184E5 
+}
 
 ul li::after {
    content: url('../images/arrow.png');
    padding-left: 5px
 }
+
+.black-list li::after {
+    content: url('../images/black_arrow.png');
+    padding-left: 5px
+ }
 
 .signinSearchLangWrapper {
     width: 400px;
@@ -187,6 +215,14 @@ ul li::after {
     cursor: pointer;
 }
 
+.product-signinText {
+    color: black
+}
+
+.black-text {
+    color: black
+}
+
 .signinText::after {
     position: absolute;
     content: '';
@@ -206,6 +242,10 @@ ul li::after {
     margin-left: 30px;
 }
 
+.black-search {
+    background-image: url('../images/black_search.png');
+}
+
 .imgBasket {
     width: 29px;
     height: 29px;
@@ -213,6 +253,10 @@ ul li::after {
     background-size: contain;
     margin-left: 30px;
     background-repeat: no-repeat;
+}
+
+.black-basket {
+    background-image: url('../images/black_basket.png');
 }
 
 .swiper-container-1 {
@@ -716,7 +760,212 @@ a {
     margin-top: -60px; 
 }
 
+.productContainer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navbarShadow {
+    position: unset !important
+}
+
+.productItem {
+    width: 325px;
+    height: 600px;
+}
+.product-image {
+    width: 100%;
+    height: 483px;
+    background-image: url('../images/product_page.png');
+    background-size: cover;
+    cursor: pointer
+}
+
+.product-page-title {
+    margin-top: 20px;
+    margin-left: 0px;
+    font-weight: 700
+}
+
+
+.product-page-stars {
+    margin: 10px 0px
+}
+
+.product-page-price {
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.product-page-price::before {
+    margin-left: 0px;
+}
+
+.select {
+    width: 199px;
+    height: 49px;
+    border-radius: 15px;
+    background-color: #E1E1E1;
+    border: none;
+    text-align: center;
+    color: #8F8F8F;
+    font-weight: 700;
+    margin: 10px
+}
+select {
+    background-image: url('../images/black_arrow.png');
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    -webkit-appearance: none;
+}
+.filter-first-items, 
+.filter-second-items, 
+.filter-third-items, 
+.filter-forth-items {
+    width: 171px;
+    margin: 15px auto;
+    display: none;
+}
+.filter-first-items.open, 
+.filter-second-items.open,
+.filter-third-items.open,
+.filter-forth-items.open {
+    display: block;
+}
+.filter-first-items div, 
+.filter-second-items div,
+.filter-third-items div,
+.filter-forth-items div {
+   display: flex
+}
+.filter-first-items>div>div, 
+.filter-second-items>div>div,
+.filter-third-items>div>div,
+.filter-forth-items>div>div {
+   width: 17px;
+   height: 17px;
+   border-radius: 15px;
+   background: #CCCCCC;
+   cursor: pointer
+}
+.filter-first-items>div>span, 
+.filter-second-items>div>span,
+.filter-third-items>div>span,
+.filter-forth-items>div>span {
+    margin-left: 10px
+
+ }
+.filter-first, 
+.filter-second,
+.filter-third,
+.filter-forth {
+    width: 199px;
+    height: 49px;
+    background: #F6F6F6;
+    border-radius: 15px;
+    margin: 10px
+}
+
+
+.filter-first.open, 
+.filter-second.open,
+.filter-third.open,
+.filter-forth.open {
+    width: 199px;
+    height: 170px;
+}
+.filter-first-div, 
+.filter-second-div,
+.filter-third-div,
+.filter-forth-div {
+    width: 199px;
+    height: 49px;
+    background-color: #E1E1E1;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/plus_icon.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    z-index: 900000000;
+}
+
+.filter-first-div.open, 
+.filter-second-div.open,
+.filter-third-div.open,
+.filter-forth-div.open {
+    background-image: url('../images/minus_icon.png');
+}
+.product-filter {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 9000000;
+}
+
 @media only screen and (min-width: 1200px) {
+
+.filter-second,
+.filter-forth, .filter-first, .filter-third, .select {
+   margin: unset;
+}
+
+.product-filter {
+    justify-content: space-between;
+}
+
+
+
+    .product-page-title {
+        margin-top: 20px;
+        margin-left: 0px;
+        font-weight: 700
+    }
+
+
+    .product-page-stars {
+        margin: 10px 0px
+    }
+
+    .product-page-price {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .product-page-price::before {
+        margin-left: 0px;
+    }
+    .productContainer {
+        width: 1100px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        z-index: -10000;
+    }
+    .productItem {
+        width: 325px;
+        height: 600px;
+    }
+    .product-image {
+        width: 100%;
+        height: 483px;
+        background-image: url('../images/product_page.png');
+        background-size: cover;
+        cursor: pointer
+    }
+    .blackLogoImg {
+        background-image: url('../images/black_logo.png');
+    }
     .footer-container {
         width: 86%;
         margin: auto;
@@ -933,6 +1182,15 @@ a {
         flex-direction: row;
         margin: 45px 8%;
         height: 111px;
+    }
+
+    .navbarShadow {
+        background: #FFFFFF;
+        box-shadow: 4px 4px 30px 5px rgba(0, 0, 0, 0.05);
+        width: 100%;
+        padding: 0% 8%;
+        margin: 0;
+        position: unset
     }
     .warning {
        height: 40px;
