@@ -76,7 +76,59 @@ function footer(screen) {
 
 
     } else {
-
+       footerContainer.innerHTML = `
+       <div class='footer-container'>
+            <div class='footer-top-part'>
+               <div class='footer-top-logo'></div>
+               <div class='footer-buttons'>
+                  <input placeholder="    Enter Your Email"/>
+                  <button>Subscribe</button>
+               </div>
+               <div class='social-icons'>
+                  <div class='facebook'></div>
+                  <div class='you-tube'></div>
+                  <div class='instagram'></div>
+            </div>
+            </div>
+            <hr class='line'/>
+            <div class='footer-bottom-part'>
+               <div>
+                  <p style='margin-bottom: 50px; font-weight:700;font-size: 24px;'>Info</p>
+                  <p>Contuct us</p>
+                  <p>About us</p>
+                  <p>Reviews</p>
+                  <p>FAQ</p>
+                  <p>Affiliate Program</p>
+               </div>
+               <div>
+                  <p style='margin-bottom: 50px; font-weight:700;font-size: 24px;'>Help</p>
+                  <p>Shippment Zip Code Check</p>
+                  <p>Shipping and Handling </p>
+                  <p>Warranty and Returns</p>
+                  <p>Paymet Options</p>
+               </div>
+               <div>
+                  <p style='margin-bottom: 50px; font-weight:700;font-size: 24px;'>Policy</p>
+                  <p>Privicy Policy</p>
+                  <p>Terms & Conditions</p>
+                  <p>Cookies</p>
+                  <p>Age Policy</p>
+                  <p>Health & Safety</p>
+               </div>
+               <div>
+                  <p style='margin-bottom: 50px; font-weight:700;font-size: 24px;'>Vapor Blog</p>
+                  <p>Title</p>
+                  <p>Title</p>
+                  <p>Title</p>
+                  <p>Title</p>
+                  <p>Title</p>
+               </div>
+            </div>
+            <div class='footer-copyright'>
+               2022 Ⓒ Copyright 2019 Kaliony UK
+            </div>
+      </div>
+       `
     }
  
 
