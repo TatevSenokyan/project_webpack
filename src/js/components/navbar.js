@@ -1,6 +1,9 @@
 
 function navbar(screen, page) {
     const navContainer = document.querySelector('.navbar');
+    if (page=='product') {
+        navContainer.style.position = 'unset';
+    }
     navContainer.innerHTML='';
 
     if (screen<1280) {
