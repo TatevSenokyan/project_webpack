@@ -13,7 +13,7 @@ function navbar(screen, page) {
         </div>
         <div class='navbarContent'>
             <div>NEW</div>
-            <div>OUR PRODUCTS</div>
+            <a href = './product.html'><div>OUR PRODUCTS</div></li></a>
             <div>BRANDS</div>
         </div>
         <div class='menu-icons-mobile'>

@@ -48,7 +48,7 @@ data.productList.forEach(function(item) {
 const images = document.querySelectorAll('.product-image');
 images.forEach((img, index) => {
   img.addEventListener('click', ()=>{
-    console.log(JSON.stringify(data.productList[index]))
+    localStorage.setItem('selectedProduct', JSON.stringify(data.productList[index]))
   })
 })
 

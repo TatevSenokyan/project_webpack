@@ -5,7 +5,8 @@ module.exports = {
     mode: 'development',
     entry: {
         main: './src/js/index.js',
-        product: './src/js/product.js'
+        product: './src/js/product.js',
+        singlepage: './src/js/singlepage.js'
     },
     output: {
         filename: '[name].js',
@@ -42,6 +43,11 @@ module.exports = {
       filename: 'product.html',
       template: path.resolve(__dirname, 'src/product.html'),
       chunks:['product']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'productpage.html',
+      template: path.resolve(__dirname, 'src/productpage.html'),
+      chunks:['singlepage']
     }),
   ],
 }
