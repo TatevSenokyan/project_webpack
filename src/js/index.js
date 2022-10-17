@@ -5,7 +5,7 @@ import {data} from './components/assets/constant';
 import createSlide from './components/slides';
 import renderItems from './components/renderItems';
 
-navbar(window.innerWidth);
+navbar(window.innerWidth, 'Home');
 footer(window.innerWidth);
 window.addEventListener('resize', ()=>{
   navbar(window.innerWidth);

@@ -93,5 +93,48 @@ export const data={
             desc: 'Elf Bar RF200 Kit is a refillable Pod Kit that allows you to experience a wide range of E-liquid flavors in a single device. It consists of a Pod and a battery. The built-in 350mAh battery can be charged via Type-C in 20 minutes. 20.2g in weight and made of PC and ABS make for a lightweight and classic body. The pump-and-activate function makes use quick and easy, while the small LED indicator shows the status of the device. The Pod of Elf Bar RF350 can be refilled with 1.6ml of E-liquid from the side and the built-in coil has a resistance of 1.2Ω, which brings out the E-liquid flavors perfectly.'
         },
     ],
+    brands:  [
+        {
+            img: 'aspire',
+            title: 'ASPIRE',
+            desc: 'An international chain of vape shops unmatched anywhere else in the world, Kaliony combines premium quality products with an exceptional'
+        },
+        {
+            img: 'kaliony',
+            title: 'KALIONY',
+            desc: 'An international chain of vape shops unmatched anywhere else in the world, Kaliony combines premium quality products with an exceptional'
+        },
+        {
+            img: 'smok',
+            title: 'SMOK',
+            desc: 'An international chain of vape shops unmatched anywhere else in the world, Kaliony combines premium quality products with an exceptional'
+        },
+        {
+            img: 'innokin',
+            title: 'INNOKIN',
+            desc: 'An international chain of vape shops unmatched anywhere else in the world, Kaliony combines premium quality products with an exceptional'
+        },
+        {
+            img: 'vaporesso',
+            title: 'VAPORESSO',
+            desc: 'An international chain of vape shops unmatched anywhere else in the world, Kaliony combines premium quality products with an exceptional'
+        },
+        {
+            img: 'elfbar',
+            title: 'ELFBAR',
+            desc: 'An international chain of vape shops unmatched anywhere else in the world, Kaliony combines premium quality products with an exceptional'
+        },
+        {
+            img: 'vladdin',
+            title: 'VLADDIN',
+            desc: 'An international chain of vape shops unmatched anywhere else in the world, Kaliony combines premium quality products with an exceptional'
+        },
+        {
+            img: 'unik',
+            title: 'UNIK',
+            desc: 'An international chain of vape shops unmatched anywhere else in the world, Kaliony combines premium quality products with an exceptional'
+        },
+        
+    ]
 
 }

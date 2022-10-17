@@ -178,9 +178,9 @@ ul li {
     color: #000000;
 }
 
-.black-list a:nth-of-type(2) li{
+/* .black-list a:nth-of-type(2) li{
     color: #5184E5 
-}
+} */
 
 ul li::after {
    content: url('../images/arrow.png');
@@ -1082,8 +1082,105 @@ select {
    font-weight: 700;
 }
 
+.brand-container {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+.brand-item {
+    width: 148px;
+    height: 203px;
+    margin: 10px;
+    border-radius: 15px;
+    background: #F4F4F4;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.brand-image {
+    width: 131px;
+    height: 131px;
+    margin:8.3px;
+}
+
+.brand-title {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    margin-top: -8px;
+}
+
+.brand-text {
+    width: 140px;
+    height: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 15px;
+    color: #A6A6A6;
+    margin: -10px auto;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 
 @media only screen and (min-width: 1200px) {
+.brand-container {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+.brand-item {
+    width: 235px;
+    height: 321px;
+    margin: 10px;
+    border-radius: 15px;
+    background: #F4F4F4;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.brand-image {
+    width: 208px;
+    height: 208px;
+    margin: 12.5px;
+}
+
+.brand-title {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    margin-top: -8px;
+}
+
+.brand-text {
+    width: 230px;
+    height: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #A6A6A6;
+    margin: -10px auto;
+    text-align: center;
+    overflow: unset;
+    white-space: unset;
+    text-overflow: unset;
+}
 .selected-product-container {
     width: 1000px;
     display: flex;

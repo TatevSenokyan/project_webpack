@@ -1,7 +1,7 @@
 
 function navbar(screen, page) {
     const navContainer = document.querySelector('.navbar');
-    if (page=='product') {
+    if (page=='product' || page == 'brands') {
         navContainer.style.position = 'unset';
     }
     navContainer.innerHTML='';
@@ -15,9 +15,9 @@ function navbar(screen, page) {
             <div class='signinText'>SIGN IN</div>
         </div>
         <div class='navbarContent'>
-            <div>NEW</div>
-            <a href = './product.html'><div>OUR PRODUCTS</div></li></a>
-            <div>BRANDS</div>
+            <div>HOME</div>
+            <a href = './product.html'><div>OUR PRODUCTS</div></a>
+            <a href = './brands.html'><div>BRANDS</div></a>
         </div>
         <div class='menu-icons-mobile'>
             <div class='imgBasket'></div>
@@ -25,7 +25,8 @@ function navbar(screen, page) {
             <div class='imgLangMobile'></div>
         </div>
         `;
-        if (page=='product') {
+        
+        if (page=='product' || page == 'brands') {
             const menu = document.querySelector('.menu-icon');
             menu.className = 'menu-icon product-menu-icon';
 
@@ -55,9 +56,9 @@ function navbar(screen, page) {
       navContainer.innerHTML = `
         <div class='logoImg'></div>
         <ul>
-           <a><li>NEW</li></a>
-           <a href = './product.html'><li>OUR PRODUCTS</li></a>
-           <a><li>BRANDS</li></a>
+           <a  href = './index.html'><li>HOME</li></a>
+           <a class='nav-product' href = './product.html'><li>OUR PRODUCTS</li></a>
+           <a class='nav-brand' href = './brands.html'><li>BRANDS</li></a>
         </ul>
         <div class='signinSearchLangWrapper'>
            <div class='imgLang'></div>
@@ -67,7 +68,7 @@ function navbar(screen, page) {
         </div>
       `;
       
-      if (page == 'product') {
+      if (page == 'product' || page=='brands') {
          const logo = document.querySelector('.logoImg');
          logo.className = 'logoImg blackLogoImg';
          const list = document.querySelector('ul');
@@ -80,9 +81,20 @@ function navbar(screen, page) {
          basket.classList.toggle('black-basket');
          navContainer.className = 'navbar navbarShadow';
       }
-
+      const list = document.querySelectorAll('li');
+      if (page == 'product') {
+          list[1].style.color = '#5184E5';
+      } 
+  
+      if (page == 'brands') {
+          list[2].style.color = '#5184E5';
+      } 
+  
+      if (page == 'Home') {
+          list[0].style.color = '#000000';
+      }
     }
- 
+    
 
     return navContainer;
 }
