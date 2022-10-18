@@ -13,6 +13,13 @@ window.addEventListener('resize', ()=>{
 });
 
 
+const close = document.querySelector('.close-icon');
+const login = document.querySelector('.login');
+close.addEventListener('click', ()=>{
+    login.classList.remove('open');
+})
+
+
 const product = JSON.parse(localStorage.getItem('selectedProduct'));
 const title = document.querySelector('.selected-product-title');
 const text = document.querySelector('.selected-product-text');

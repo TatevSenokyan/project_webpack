@@ -13,6 +13,13 @@ window.addEventListener('resize', ()=>{
 });
 
 
+const close = document.querySelector('.close-icon');
+const login = document.querySelector('.login');
+close.addEventListener('click', ()=>{
+    login.classList.remove('open');
+})
+
+
 const productContainer = document.querySelector('.productContainer');
 
 data.productList.forEach(function(item) {

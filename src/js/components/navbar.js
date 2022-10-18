@@ -94,7 +94,13 @@ function navbar(screen, page) {
           list[0].style.color = '#000000';
       }
     }
-    
+
+
+    const text = document.querySelector('.signinText');
+    const login = document.querySelector('.login');
+    text.addEventListener('click', ()=>{
+        login.classList.add('open');
+    })
 
     return navContainer;
 }

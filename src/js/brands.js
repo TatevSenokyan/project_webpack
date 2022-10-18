@@ -46,3 +46,11 @@ data.brands.forEach(function(brand, index) {
     div.appendChild(span);
     brands.appendChild(div);
 })
+
+
+
+const close = document.querySelector('.close-icon');
+const login = document.querySelector('.login');
+close.addEventListener('click', ()=>{
+    login.classList.remove('open');
+})

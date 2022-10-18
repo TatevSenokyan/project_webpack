@@ -37,6 +37,13 @@ var swiper = new Swiper(".swiper-container-1", {
   });
 
 
+  const close = document.querySelector('.close-icon');
+  const login = document.querySelector('.login');
+  close.addEventListener('click', ()=>{
+      login.classList.remove('open');
+  })
+
+
 
 
 

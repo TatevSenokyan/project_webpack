@@ -7,6 +7,109 @@ body {
     overflow-x: hidden;
 }
 
+.login {
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    z-index: 10000000;
+    display: none;
+    background: rgba(16, 16, 16, 0.75);
+}
+
+.login.open {
+    display: block
+}
+
+.loginContainer {
+    width: 360px;
+    height: 600px;
+    margin: 50px auto;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.login-content {
+    width: 327px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+.mail-text, .password-text {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    width: 327px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 71px;
+}
+
+.login-btn {
+    background: #5184E5;
+    border-radius: 15px;
+    width: 327px;
+    height: 54px;
+    color: #FFFFFF;
+    margin-top: 30px;
+    border: none;
+    font-size: 18px;
+}
+
+.forget-password {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    color: #D7D7D7;
+    text-align: right;
+    width: 327px;
+    margin-top: 15px;
+}
+
+.password-text {
+    margin-top: 10px;
+}
+
+.text-input, .password-input {
+    width: 327px;
+    height:54px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+.condition {
+    width: 327px;
+    text-align: right;
+    margin-top: 50px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #D7D7D7;
+}
+
+.signup {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #5184E5;
+    cursor: pointer;
+}
+
 .warning {
     width: 100%;
     height: 118px;
@@ -21,9 +124,32 @@ body {
     text-align: center;
 }
 
+.login-title {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    /* identical to box height */
+    color: #5184E5;
+    margin-top: 20px;
+}
+
 .warning span {
     width: 287px;
     height: 63px;
+}
+
+.close-icon {
+        width: 22px;
+        height: 22px;
+        background-image: url('../images/close.png');
+        background-size: cover;
+        margin-top: 10px;
+        z-index: 799999999999999;
+        align-self: flex-end;
+        cursor: pointer
+    
 }
 
 .navbar {
