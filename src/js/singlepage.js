@@ -19,6 +19,26 @@ close.addEventListener('click', ()=>{
     login.classList.remove('open');
 })
 
+const signup = document.querySelector('.signup');
+const signupp = document.querySelector('.signupp');
+signup.addEventListener('click', ()=>{
+    login.classList.remove('open');
+    signupp.classList.add('open');
+})
+
+
+const closeSignup = document.querySelector('.close-icon-signup');
+closeSignup.addEventListener('click', ()=>{
+  signupp.classList.remove('open');
+})
+
+const signin = document.querySelector('.signin');
+
+signin.addEventListener('click', ()=>{
+  login.classList.add('open');
+  signupp.classList.remove('open');
+})
+
 
 const product = JSON.parse(localStorage.getItem('selectedProduct'));
 const title = document.querySelector('.selected-product-title');
@@ -28,3 +48,11 @@ const price = document.querySelector('.selected-product-price');
 title.innerHTML = product.title;
 text.innerHTML = product.desc;
 price.innerHTML = product.price;
+
+
+
+const search = document.querySelector('.search-close');
+const searchContainer = document.querySelector('.searchContainer');
+search.addEventListener('click', ()=>{
+    searchContainer.classList.remove('open');
+})

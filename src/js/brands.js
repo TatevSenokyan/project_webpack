@@ -54,3 +54,30 @@ const login = document.querySelector('.login');
 close.addEventListener('click', ()=>{
     login.classList.remove('open');
 })
+
+const signup = document.querySelector('.signup');
+const signupp = document.querySelector('.signupp');
+signup.addEventListener('click', ()=>{
+    login.classList.remove('open');
+    signupp.classList.add('open');
+})
+
+
+const closeSignup = document.querySelector('.close-icon-signup');
+closeSignup.addEventListener('click', ()=>{
+  signupp.classList.remove('open');
+})
+
+const signin = document.querySelector('.signin');
+
+signin.addEventListener('click', ()=>{
+  login.classList.add('open');
+  signupp.classList.remove('open');
+})
+
+
+const search = document.querySelector('.search-close');
+const searchContainer = document.querySelector('.searchContainer');
+search.addEventListener('click', ()=>{
+    searchContainer.classList.remove('open');
+})

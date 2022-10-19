@@ -91,7 +91,7 @@ function navbar(screen, page) {
       } 
   
       if (page == 'Home') {
-          list[0].style.color = '#000000';
+          list[0].style.color = '#5184E5';
       }
     }
 
@@ -100,6 +100,12 @@ function navbar(screen, page) {
     const login = document.querySelector('.login');
     text.addEventListener('click', ()=>{
         login.classList.add('open');
+    });
+
+    const search = document.querySelector('.imgSearch');
+    const searchContainer = document.querySelector('.searchContainer');
+    search.addEventListener('click', ()=>{
+        searchContainer.classList.add('open');
     })
 
     return navContainer;
