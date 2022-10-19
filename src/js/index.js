@@ -10,7 +10,7 @@ navbar(window.innerWidth, 'Home');
 footer(window.innerWidth);
 window.addEventListener('resize', ()=>{
 
-  navbar(window.innerWidth);
+  navbar(window.innerWidth, 'Home', 'resize');
   footer(window.innerWidth);
   // createSlide(data.products, window.innerWidth);
 });
@@ -79,6 +79,7 @@ const scroll = document.querySelector('.scroll');
 scroll.addEventListener('click', ()=>{
   window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
 })
+
 
 
 

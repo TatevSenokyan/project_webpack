@@ -1,5 +1,5 @@
 
-function navbar(screen, page) {
+function navbar(screen, page, cond) {
     const navContainer = document.querySelector('.navbar');
     if (page=='product' || page == 'brands') {
         navContainer.style.position = 'unset';
@@ -42,14 +42,23 @@ function navbar(screen, page) {
         const text = document.querySelector('.signinText');
         const navContent = document.querySelector('.navbarContent');
         const icons = document.querySelector('.menu-icons-mobile');
-
+        if (nav.classList.contains('menuOpen')) {
+            menu.classList.add('menuOpen');
+            nav.classList.add('menuOpen');
+            logo.classList.add('menuOpen');
+            text.classList.add('menuOpen');
+            navContent.classList.add('menuOpen');
+            icons.classList.add('menuOpen');
+        }
         menu.addEventListener('click', () => {
-            menu.classList.toggle('menuOpen');
-            nav.classList.toggle('menuOpen');
-            logo.classList.toggle('menuOpen');
-            text.classList.toggle('menuOpen');
-            navContent.classList.toggle('menuOpen');
-            icons.classList.toggle('menuOpen');
+                console.log('mtav');
+                menu.classList.toggle('menuOpen');
+                nav.classList.toggle('menuOpen');
+                logo.classList.toggle('menuOpen');
+                text.classList.toggle('menuOpen');
+                navContent.classList.toggle('menuOpen');
+                icons.classList.toggle('menuOpen');
+        
         });
 
     } else {
