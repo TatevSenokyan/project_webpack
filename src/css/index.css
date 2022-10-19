@@ -533,7 +533,7 @@ ul li::after {
      background-repeat: no-repeat;
      cursor: pointer;
      margin-left: 50%;
-     animation: scroll 1.5s infinite linear;
+     animation: scroll 3s infinite linear;
  }
 
  @keyframes scroll {

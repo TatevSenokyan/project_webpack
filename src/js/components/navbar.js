@@ -61,7 +61,6 @@ function navbar(screen, page) {
            <a class='nav-brand' href = './brands.html'><li>BRANDS</li></a>
         </ul>
         <div class='signinSearchLangWrapper'>
-           <div class='imgLang'></div>
            <div class='signinText'>SIGN IN</div>
            <div class='imgSearch'></div>
            <div class='imgBasket'></div>

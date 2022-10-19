@@ -9,6 +9,7 @@ import renderItems from './components/renderItems';
 navbar(window.innerWidth, 'Home');
 footer(window.innerWidth);
 window.addEventListener('resize', ()=>{
+
   navbar(window.innerWidth);
   footer(window.innerWidth);
   // createSlide(data.products, window.innerWidth);
@@ -71,6 +72,13 @@ search.addEventListener('click', ()=>{
     searchContainer.classList.remove('open');
 })
 
+
+
+const scroll = document.querySelector('.scroll');
+
+scroll.addEventListener('click', ()=>{
+  window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
+})
 
 
 
