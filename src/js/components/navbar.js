@@ -15,7 +15,7 @@ function navbar(screen, page, cond) {
             <div class='signinText'>SIGN IN</div>
         </div>
         <div class='navbarContent'>
-            <div>HOME</div>
+            <a href = './index.html'><div>HOME</li></div>
             <a href = './product.html'><div>OUR PRODUCTS</div></a>
             <a href = './brands.html'><div>BRANDS</div></a>
         </div>
